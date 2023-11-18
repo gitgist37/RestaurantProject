@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Restaurant Window</title>
+<head><h1 style="margin-left: 40%;">EAT GROW</h1></head>
+<body>
+    <div style="width: 100%; display: table; margin-top: 4%; margin-bottom: 7%;">
+        <div style="display: table-row">
+            <div id="form1" style="display: table-cell;"> 
+                <form id="demo" style="width: 100%; margin-left: 30%;">
+                    <label for="item_price">PRICE:</label>  
+                    <input type="text" name="item_price" id="item_price" width="100%">
+                    <label for="item_name">ITEM:</label>  
+                    <input type="text" name="item_name" id="item_name" width="100%"><br> 
+                    <label for="table_name">TABLE:</label>  
+                    <select name="tables" id="tables">
+        
+                    <option value="table1">table1</option>
+                    <option value="table2">table2</option>
+                    <option value="table3">table3</option>
+                    
+                    </select>
+                    <button id="add">SUBMIT</button> 
+        
+                </form>    
+            </div >
+        </div>
+    </div>
+    <div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    </div>
+    <div style="width: 100%; display: table;">
+        <div style="display: table-row;">
+            <div id="table1-order" style="width: 30%; display: table-cell;">  
+                <h1>TABLE1</h1> 
+                <ul id="table1">
+        
+                </ul>   
+            </div>
+            <div id="table2-order" style="display: table-cell;">
+                <h1>TABLE2</h1> 
+                <ul id="table2">  
+        
+                </ul>    
+            </div>
+            <div id="table3-order" style="display: table-cell;">  
+                <h1>TABLE3</h1>  
+                <ul id="table3">
+        
+                </ul>    
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="restaurant_js.js"></script>
+
+</html>
